@@ -4,7 +4,7 @@ module.exports = {
   siteMetadata: {
     title: 'Rushikesh Zawar',
     description:
-      'Rushikesh Zawar is a student at BITS Pilani, Pilani Campus,India',
+      'Rushikesh Zawar is a student at BITS Pilani, Pilani Campus, India',
     siteUrl: 'https://rbz-99.github.io/my_project', // No trailing slash allowed!
     image: '/og.png', // Path to your image you placed in the 'static' folder
     twitterUsername: '',
