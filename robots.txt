@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://brittanychiang.com/my_project/sitemap/sitemap-index.xml
-Host: https://brittanychiang.com
+Sitemap: https://rbz-99.github.io/my_project/sitemap/sitemap-index.xml
+Host: https://rbz-99.github.io
