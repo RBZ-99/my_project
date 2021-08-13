@@ -59,14 +59,13 @@ const Hero = () => {
   }, []);
 
   const one = <h1>Hi, my name is</h1>;
-  const two = <h2 className="big-heading">Brittany Chiang.</h2>;
-  const three = <h3 className="big-heading">I build things for the web.</h3>;
+  const two = <h2 className="big-heading">Rushikesh Zawar.</h2>;
+  const three = <h3 className="big-heading">I love to work and learn in Computer Science and Biology.</h3>;
   const four = (
     <p>
-      I'm a software engineer specializing in building (and occasionally designing) exceptional
-      digital experiences. Currently, I'm focused on building accessible, human-centered products at{' '}
-      <a href="https://upstatement.com/" target="_blank" rel="noreferrer">
-        Upstatement
+      I'm a student pursuing dual majors of Computer Science and Biological Sciences at BITS Pilani, Pilani Campus, India, graduating in June 2022. I am currently working on Continual Learning in Computer Vision at {' '}
+      <a href="https://www.harvard.edu/" target="_blank" rel="noreferrer">
+      Harvard University
       </a>
       .
     </p>
