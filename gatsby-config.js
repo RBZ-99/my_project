@@ -4,7 +4,7 @@ module.exports = {
   siteMetadata: {
     title: 'Rushikesh Zawar',
     description:
-      'Rushikesh Zawar is a student at BITS Pilani, Pilani Campus, India',
+      'Rushikesh Zawar is a student at BITS Pilani, Pilani Campus,India',
     siteUrl: 'https://rbz-99.github.io/my_project', // No trailing slash allowed!
     image: '/og.png', // Path to your image you placed in the 'static' folder
     twitterUsername: '',
@@ -20,8 +20,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'RushikeshZawar',
-        short_name: 'RushikeshZawar',
+        name: 'BrittanyChiang',
+        short_name: 'BrittanyChiang',
         start_url: '/',
         background_color: config.colors.darkNavy,
         theme_color: config.colors.navy,
