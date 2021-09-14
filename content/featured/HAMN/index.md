@@ -1,7 +1,7 @@
 ---
 date: '2'
 title: 'Publication at AAAI 2022'
-cover: './HAMN.pdf'
+cover: './HAMN.jpg'
 # github: 'https://github.com/bchiang7/octoprofile'
 # external: 'https://octoprofile.now.sh'
 tech:
