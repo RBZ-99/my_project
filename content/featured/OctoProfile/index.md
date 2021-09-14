@@ -4,10 +4,10 @@ title: 'Publication at AAAI 2022'
 cover: './HAMN.png'
 # github: 'https://github.com/bchiang7/octoprofile'
 # external: 'https://octoprofile.now.sh'
-# tech:
-#   - Next.js
-#   - Chart.js
-#   - GitHub API
+tech:
+   - Python
+   - Pytorch
+   - Script
 showInProjects: true
 ---
 A new method in continual learning without catastrophic forgetting for image classification, with lesser memory space and better performance than the current state of the art methods.

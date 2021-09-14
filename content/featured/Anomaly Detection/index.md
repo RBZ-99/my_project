@@ -2,7 +2,7 @@
 date: '1'
 title: 'Publication at BMVC 2021'
 cover: './overview_BMVC.png'
-github: 'https://github.com/bchiang7/halcyon-site'
+#github: 'https://github.com/bchiang7/halcyon-site'
 external: 'https://www.ceeri.res.in/'
 tech:
   - Python
