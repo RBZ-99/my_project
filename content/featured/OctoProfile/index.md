@@ -1,5 +1,5 @@
 ---
-date: '3'
+date: '2'
 title: 'Publication at AAAI 2022'
 cover: './HAMN.png'
 # github: 'https://github.com/bchiang7/octoprofile'
