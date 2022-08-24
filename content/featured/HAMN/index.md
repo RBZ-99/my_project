@@ -1,6 +1,6 @@
 ---
 date: '2'
-title: 'At CVPR 2022'
+title: 'Submitting at Nature Journal'
 cover: './HAMN.jpg'
 # github: 'https://github.com/bchiang7/octoprofile'
 # external: 'https://octoprofile.now.sh'

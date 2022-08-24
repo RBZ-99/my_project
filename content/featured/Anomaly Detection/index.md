@@ -1,6 +1,6 @@
 ---
 date: '1'
-title: 'At NCA Journal'
+title: 'Under review at Signal, Image and Video Processing Journal'
 cover: './overview_BMVC.png'
 #github: 'https://github.com/bchiang7/halcyon-site'
 external: 'https://www.ceeri.res.in/'
