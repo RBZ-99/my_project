@@ -61,7 +61,7 @@ const StyledPic = styled.div`
     position: relative;
     width: 100%;
     border-radius: var(--border-radius);
-    background-color: var(--green);
+    background-color: transparent;
 
     &:hover,
     &:focus {
@@ -126,7 +126,7 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['Python','C++','C','Java','SQL','Adobe After Effects'];
+  const skills = ['Python','PyTorch',,'Tensorflow','C++','C','Java','SQL','Adobe After Effects'];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -136,9 +136,8 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hello! My name is Rushikesh and I enjoy creating things that live on the internet. I find Computer Science and Aritificial
-              Intelligence, to be quite interesting and I always look forward to learn something new and challenging. I am also quite into Biological Sciences 
-              especially Neuroscience. Apart from this, I enjoy playing Synthesizer and Harmonium. I also practice Calisthenics and love to play Lawn Tennis and Badminton.
+              Hello! My name is Rushikesh and I enjoy creating things that live on the internet. I find <b> Data Science </b> and  <b> Machine Learning </b>, to be quite interesting. I am also quite into  <b> Medical science, Healthcare and Neuroscience </b>.
+              Apart from this, I enjoy playing Synthesizer and Harmonium. I also practice Calisthenics and love to play Lawn Tennis and Badminton.
             </p>
 
             <p>

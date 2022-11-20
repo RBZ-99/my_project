@@ -1,15 +1,13 @@
 ---
 date: '2'
-title: 'Submitting at Nature Journal'
+title: 'CRUMB'
 cover: './HAMN.jpg'
-# github: 'https://github.com/bchiang7/octoprofile'
-# external: 'https://octoprofile.now.sh'
+external: 'https://arxiv.org/abs/2104.02206'
 tech:
    - Python
    - Pytorch
    - Script
 showInProjects: true
 ---
-A new method in continual learning without catastrophic forgetting for image classification, with lesser memory space and better performance than the current state of the art methods.
-The paper will be submitted to Nature Journal.
-<!-- A nicer look at your GitHub profile and repository stats with data visualizations of your top languages and stars. Sort through your top repos by number of stars, forks, and size. -->
+A new method in Continual Learning tackling catastrophic forgetting for image classification. Consumes very less memory space and has better performance than the current state of the art methods.
+Submitted at CVPR-2023
