@@ -63,11 +63,7 @@ const Hero = () => {
   const three = <h3 className="big-heading">I love to work and learn in Computer Science, A.I. and Biology.</h3>;
   const four = (
     <p>
-      Graduated with dual majors in Computer Science and Biological Sciences from BITS Pilani, Pilani Campus, India, in June 2022. I am currently working on Deep fake detection and interpretaibility in Computer Vision at // {' '}
-      // <a href="https://www.harvard.edu/" target="_blank" rel="noreferrer">
-      // Harvard University
-      // </a>
-      .
+      Graduated with dual majors in Computer Science and Biological Sciences from BITS Pilani, Pilani Campus, India, in June 2022. I am currently working on Deep fake detection and interpretaibility in Computer Vision.
     </p>
   );
   const five = (
