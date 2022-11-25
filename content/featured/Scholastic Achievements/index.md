@@ -4,7 +4,8 @@ title: 'Scholastic Achievements'
 cover: './trophy.png'
 #github: 'https://github.com/bchiang7/halcyon-site'
 external: ''
-tech: ''
+tech:
+   - Achievements
 showInProjects: true
 ---
 
