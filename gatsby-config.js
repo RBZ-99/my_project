@@ -5,7 +5,7 @@ module.exports = {
     title: 'Rushikesh Zawar',
     description:
       'Rushikesh Zawar is a student at BITS Pilani, Pilani Campus, India',
-    siteUrl: 'https://rbz-99.github.io/my_project', // No trailing slash allowed!
+    siteUrl: 'https://rbz-99.github.io/webpage', // No trailing slash allowed!
     image: '/og.png', // Path to your image you placed in the 'static' folder
     twitterUsername: '',
   },
@@ -156,5 +156,5 @@ module.exports = {
       },
     },
   ],
-  pathPrefix: "/my_project",
+  pathPrefix: "/webpage",
 };
