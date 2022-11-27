@@ -1,7 +1,7 @@
 ---
 date: '4'
 title: 'Scholastic Achievements'
-cover: '/content/featured/Scholastic Achievements/Pic1.jpeg'
+cover: 'Pic1.jpeg'
 #github: 'https://github.com/bchiang7/halcyon-site'
 external: ''
 tech:
