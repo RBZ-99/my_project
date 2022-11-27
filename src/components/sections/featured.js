@@ -440,27 +440,27 @@ const Featured = () => {
                         </a>
                       )}
                       {external && (
-                        <StyledPic>
-          
-                        <StaticImage
-                          className="img"
-                          src="../../images/me.jpg"
-                          width={500}
-                          quality={95}
-                          formats={['AUTO', 'WEBP', 'AVIF']}
-                          alt="Headshot"
-                        />
-                      
-                    </StyledPic>
+                        <a href={external} aria-label="External Link" className="external">
+                          <Icon name="External" />
+                        </a>
                       )}
                     </div>
                   </div>
                 </div>
 
                 <div className="project-image">
-                  <a href={external ? external : github ? github : '#'}>
-                    <GatsbyImage image={image} alt={title} className="img" />
-                  </a>
+                <StyledPic>
+          
+                <StaticImage
+                  className="img"
+                  src="../../images/me.jpg"
+                  width={500}
+                  quality={95}
+                  formats={['AUTO', 'WEBP', 'AVIF']}
+                  alt="Headshot"
+                />
+              
+                </StyledPic>
                 </div>
               </StyledProject>
             );
