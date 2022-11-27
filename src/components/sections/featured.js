@@ -409,6 +409,7 @@ const Featured = () => {
             const { frontmatter, html } = node;
             const { external, title, tech, github, cover } = frontmatter;
             const image = getImage(cover);
+            console.log(typeof image['images']['fallback']['src'])
 
             return (
               <StyledProject key={i} ref={el => (revealProjects.current[i] = el)}>
@@ -453,7 +454,7 @@ const Featured = () => {
           
                 <StaticImage
                   className="img"
-                  src="../../images/me.jpg"
+                  src= {image['images']['fallback']['src']} 
                   width={500}
                   quality={95}
                   formats={['AUTO', 'WEBP', 'AVIF']}
