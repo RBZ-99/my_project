@@ -409,7 +409,8 @@ const Featured = () => {
             const { frontmatter, html } = node;
             const { external, title, tech, github, cover } = frontmatter;
             const image = getImage(cover);
-            console.log(typeof image['images']['fallback']['src'])
+            console.log(image['images']['fallback']['src'])
+            var pathname_img  = image['images']['fallback']['src']
 
             return (
               <StyledProject key={i} ref={el => (revealProjects.current[i] = el)}>
@@ -449,21 +450,73 @@ const Featured = () => {
                   </div>
                 </div>
 
-                <div className="project-image">
-                <StyledPic>
-          
-                <StaticImage
-                  className="img"
-                  src= {image['images']['fallback']['src']} 
-                  width={500}
-                  quality={95}
-                  formats={['AUTO', 'WEBP', 'AVIF']}
-                  alt="Headshot"
-                />
-              
-                </StyledPic>
-                </div>
-              </StyledProject>
+                
+                if (pathname_img == "/static/3685014f74f77491b48f632152231c37/9398b/Pic1.jpg")
+                {
+                  <div className="project-image">
+                  <StyledPic>
+                  <StaticImage
+                    className="img"
+                    src= "/static/3685014f74f77491b48f632152231c37/9398b/Pic1.jpg"
+                    width={500}
+                    quality={95}
+                    formats={['AUTO', 'WEBP', 'AVIF']}
+                    alt="Headshot"
+                  />
+                  </StyledPic>
+                  </div>
+
+                }
+                else if (pathname_img == "/static/32af6f019268b419dac64c1573867cdb/30d03/HAMN.jpg")
+                {
+                  <div className="project-image">
+                  <StyledPic>
+                  <StaticImage
+                    className="img"
+                    src= "/static/32af6f019268b419dac64c1573867cdb/30d03/HAMN.jpg"
+                    width={500}
+                    quality={95}
+                    formats={['AUTO', 'WEBP', 'AVIF']}
+                    alt="Headshot"
+                  />
+                  </StyledPic>
+                  </div>
+
+                }
+                else if (pathname_img == "/static/acaf48141a9b83953d43018241ee8f53/e3559/overview_BMVC.png")
+                {
+                  <div className="project-image">
+                  <StyledPic>
+                  <StaticImage
+                    className="img"
+                    src= "/static/acaf48141a9b83953d43018241ee8f53/e3559/overview_BMVC.png"
+                    width={500}
+                    quality={95}
+                    formats={['AUTO', 'WEBP', 'AVIF']}
+                    alt="Headshot"
+                  />
+                  </StyledPic>
+                  </div>
+
+                }
+                else if (pathname_img == "/static/c50565160f3b01778ae2ea308406f735/8bec5/Transformation_cloning.png")
+                {
+                  <div className="project-image">
+                  <StyledPic>
+                  <StaticImage
+                    className="img"
+                    src= "/static/c50565160f3b01778ae2ea308406f735/8bec5/Transformation_cloning.png"
+                    width={500}
+                    quality={95}
+                    formats={['AUTO', 'WEBP', 'AVIF']}
+                    alt="Headshot"
+                  />
+                  </StyledPic>
+                  </div>
+
+                }
+                </StyledProject>
+                
             );
           })}
       </StyledProjectsGrid>
