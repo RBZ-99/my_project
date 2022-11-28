@@ -1,7 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
-import { StaticImage } from 'gatsby-plugin-image';
 import styled from 'styled-components';
 import sr from '@utils/sr';
 import { srConfig } from '@config';
@@ -180,6 +179,7 @@ const StyledProject = styled.li`
       color: var(--white);
       font-weight: normal;
     }
+
   }
 
   .project-tech-list {
@@ -308,7 +308,7 @@ const Featured = () => {
   const data = useStaticQuery(graphql`
     {
       featured: allMarkdownRemark(
-        filter: { fileAbsolutePath: { regex: "/content/featured/" } }
+        filter: { fileAbsolutePath: { regex: "/featured/" } }
         sort: { fields: [frontmatter___date], order: DESC }
       ) {
         edges {
@@ -330,59 +330,7 @@ const Featured = () => {
       }
     }
   `);
-  const StyledPic = styled.div`
-  position: relative;
-  max-width: 300px;
 
-  @media (max-width: 768px) {
-    margin: 50px auto 0;
-    width: 70%;
-  }
-
-  .wrapper {
-    ${({ theme }) => theme.mixins.boxShadow};
-    display: block;
-    position: relative;
-    width: 100%;
-    border-radius: var(--border-radius);
-    background-color: var(--green);
-
-    
-
-    .img {
-      position: relative;
-      border-radius: var(--border-radius);
-      mix-blend-mode: multiply;
-      filter: none;
-      
-    }
-
-    &:before,
-    &:after {
-      content: '';
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      border-radius: var(--border-radius);
-      transition: var(--transition);
-    }
-
-    &:before {
-      top: 0;
-      left: 0;
-      background-color: var(--navy);
-      mix-blend-mode: screen;
-    }
-
-    &:after {
-      border: 2px solid var(--green);
-      top: 20px;
-      left: 20px;
-      z-index: -1;
-    }
-  }
-`;
   const featuredProjects = data.featured.edges.filter(({ node }) => node);
   const revealTitle = useRef(null);
   const revealProjects = useRef([]);
@@ -400,7 +348,7 @@ const Featured = () => {
   return (
     <section id="projects">
       <h2 className="numbered-heading" ref={revealTitle}>
-        Some Things I’ve Built
+        Featured Work
       </h2>
 
       <StyledProjectsGrid>
@@ -409,15 +357,12 @@ const Featured = () => {
             const { frontmatter, html } = node;
             const { external, title, tech, github, cover } = frontmatter;
             const image = getImage(cover);
-            console.log(typeof image['images']['fallback']['src'])
-            var pathname_img  = image['images']['fallback']['src']
-            if (pathname_img == "/static/3685014f74f77491b48f632152231c37/9398b/Pic1.jpg")
-            {
+
             return (
               <StyledProject key={i} ref={el => (revealProjects.current[i] = el)}>
                 <div className="project-content">
                   <div>
-                    <p className="project-overline">Featured Project</p>
+                    <p className="project-overline">Featured Work</p>
 
                     <h3 className="project-title">
                       <a href={external}>{title}</a>
@@ -452,77 +397,12 @@ const Featured = () => {
                 </div>
 
                 <div className="project-image">
-                <StyledPic>
-                <StaticImage
-                  className="img"
-                  src= "/static/3685014f74f77491b48f632152231c37/9398b/Pic1.jpg"
-                  width={500}
-                  quality={95}
-                  formats={['AUTO', 'WEBP', 'AVIF']}
-                  alt="Headshot"
-                />
-              
-                </StyledPic>
+                  <a href={external ? external : github ? github : '#'}>
+                    <GatsbyImage image={image} alt={title} className="img" />
+                  </a>
                 </div>
               </StyledProject>
             );
-                      }
-                      else 
-                      {
-                      return (
-                        <StyledProject key={i} ref={el => (revealProjects.current[i] = el)}>
-                          <div className="project-content">
-                            <div>
-                              <p className="project-overline">Featured Project</p>
-          
-                              <h3 className="project-title">
-                                <a href={external}>{title}</a>
-                              </h3>
-          
-                              <div
-                                className="project-description"
-                                dangerouslySetInnerHTML={{ __html: html }}
-                              />
-          
-                              {tech.length && (
-                                <ul className="project-tech-list">
-                                  {tech.map((tech, i) => (
-                                    <li key={i}>{tech}</li>
-                                  ))}
-                                </ul>
-                              )}
-          
-                              <div className="project-links">
-                                {github && (
-                                  <a href={github} aria-label="GitHub Link">
-                                    <Icon name="GitHub" />
-                                  </a>
-                                )}
-                                {external && (
-                                  <a href={external} aria-label="External Link" className="external">
-                                    <Icon name="External" />
-                                  </a>
-                                )}
-                              </div>
-                            </div>
-                          </div>
-          
-                          <div className="project-image">
-                          <StyledPic>
-                          <StaticImage
-                            className="img"
-                            src= "/static/32af6f019268b419dac64c1573867cdb/30d03/HAMN.jpg"
-                            width={500}
-                            quality={95}
-                            formats={['AUTO', 'WEBP', 'AVIF']}
-                            alt="Headshot"
-                          />
-                        
-                          </StyledPic>
-                          </div>
-                        </StyledProject>
-                      );
-                                }
           })}
       </StyledProjectsGrid>
     </section>
