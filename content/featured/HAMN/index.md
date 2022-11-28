@@ -10,4 +10,4 @@ tech:
 showInProjects: true
 ---
 A new method in Continual Learning tackling catastrophic forgetting for image classification. Consumes very less memory space and has better performance than the current state of the art methods.
-Submitted at CVPR-2023
+Submitted at CVPR-2023 (1st author)
