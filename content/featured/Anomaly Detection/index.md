@@ -1,6 +1,6 @@
 ---
 date: '2'
-title: 'Under review at Signal, Image and Video Processing Journal'
+title: 'Under review at Image and Vision Computing Journal'
 cover: './overview_BMVC.png'
 #github: 'https://github.com/bchiang7/halcyon-site'
 external: 'http://arxiv.org/abs/2211.13808'
