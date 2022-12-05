@@ -2,7 +2,7 @@
 date: '4'
 title: 'Scholastic Achievements'
 cover: './Pic1.jpeg'
-#github: 'https://github.com/bchiang7/halcyon-site'
+github: 'https://iusstf.org/khorana-program-for-scholars'
 external: ''
 tech:
    - Achievements

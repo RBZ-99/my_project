@@ -3,7 +3,7 @@ date: '1'
 title: 'Genetic Engineering'
 cover: './Transformation_cloning.png'
 #github: 'https://github.com/bchiang7/halcyon-site'
-#external: 'https://www.ceeri.res.in/'
+external: 'https://microbiologynote.com/gene-cloning-steps/'
 tech:
   - Wet Lab
 showInProjects: true
